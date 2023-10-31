@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:background="#ddd">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dd_logo" />
+
+        <TextView
+                android:id="@+id/tvFoodName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hamburger"
+                android:textSize="32sp"
+                android:textColor="@color/green"
+                android:layout_marginTop="20dp"/>
+
+        <EditText
+                android:id="@+id/etNewFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="60dp"
+                android:hint="Add New Food"/>
+
+        <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:text="ADD FOOD"
+                android:backgroundTint="@color/green"
+                />
+    </LinearLayout>
+    <Button
+            android:id="@+id/btnDecide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DECIDE!"
+            android:backgroundTint="@color/green"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            />
+
+
+</RelativeLayout>
